@@ -1,0 +1,191 @@
+@import url(../css/_normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans&family=Staatliches&family=Tourney:wght@600&display=swap');
+@import url(../css/_vars.css);
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;  
+}
+
+html,
+body {
+    min-height: 100vh;
+    color: var(--font-color);
+    font-size: var(--main-font-size);
+    margin: 15px;
+    position: relative;
+}
+
+.background__picture {
+    position: absolute;
+    left: 53.39%;
+    right: -9.17%;
+    top: 4.87%;
+    bottom: 70.46%;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+} 
+
+.flexbox {
+    display: flex;
+    position: relative;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+/* header */
+
+.header_flexbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3px;
+    /* margin-bottom: 70px; */
+}
+
+.nav {
+    justify-content: left;
+}
+
+.nav_link {
+    justify-content: start;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--font-color);
+}
+
+.page_lang {
+    font-family: 'Tourney', cursive; 
+    font-weight: 600;
+    letter-spacing: 6%;
+    padding-right: 50px;
+}
+
+.page {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    letter-spacing: 3%;
+}
+
+.logo >img {
+    justify-content: right;
+    align-items: end;
+}
+
+/* sidebar */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 70px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    position: sticky;
+    left: 0;
+    top: 70px;
+    gap: 70px;
+    margin: 10px;
+}
+
+.list__item {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.list__item_link {
+    position: relative;
+}
+
+.title {
+    font-family: 'Francois One', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--font-color);
+    text-decoration: none;
+    letter-spacing: 4%;
+}
+
+/* main */
+.main {
+    max-width: 785px;
+    margin: 70px 0 0 30px;
+    justify-content: left;
+}
+
+u {
+    text-decoration: underline;
+}
+
+.text_color {
+    background-color: #C9C9C9;
+}
+
+.chapter {
+    position: relative;
+    margin-bottom: 98px;
+}
+
+.chapter:first-child {
+    margin-top: 28px;
+}
+
+.chapter_title {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.chapter::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+    left: 0;
+    top: -28px;
+}
+
+.sup-title {
+    font-family: 'Farro', sans-serif;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 15px;
+    position: absolute;
+    top: -4px;
+    right: -80px;
+    letter-spacing: 4%;
+}
+
+.description {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.description_list {
+    padding-left: 0;
+}
+
+.description_list > li {
+    padding-bottom: 40px;
+} 
+
+.description_list>li:last-child {
+    padding-bottom: 0;
+}
